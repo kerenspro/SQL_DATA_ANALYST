@@ -1,0 +1,75 @@
+--january jobs
+CREATE TABLE january_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 1;
+
+--february jobs
+CREATE TABLE february_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 2;
+
+--march jobs
+CREATE TABLE march_jobs AS
+SELECT *
+FROM job_postings_fact
+WHERE EXTRACT (MONTH FROM job_posted_date) = 3;
+
+--april jobs
+CREATE TABLE april_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHere EXTRACT (MONTH FROM job_posted_date) = 4;
+
+--may jobs
+CREATE TABLE may_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 5;
+
+--june jobs
+CREATE TABLE june_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 6;
+
+--july jobs
+CREATE TABLE july_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 7;
+
+--august jobs
+CREATE TABLE august_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 8;
+
+--september jobs
+CREATE TABLE september_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 9;
+
+--october jobs
+CREATE TABLE october_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 10;
+
+--november jobs
+CREATE TABLE november_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 11;
+
+--december jobs
+CREATE TABLE december_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT (MONTH FROM job_posted_date) = 12;
+
+
+SELECT job_posted_date
+FROM march_jobs
